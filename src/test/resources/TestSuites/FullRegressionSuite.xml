@@ -2,6 +2,7 @@
 
 <suite name="Regression Test Suite For All Tests" verbose="1">
     <test name="Regression Tests">
+        <parameter name="browser" value="firefox"/>
         <groups>
             <run>
                 <include name="RegressionTests"/>

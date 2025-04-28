@@ -16,7 +16,7 @@ public class AddressOrder {
     SoftAssert softAssert=new SoftAssert();
     @BeforeMethod(alwaysRun = true)//By applying always run set to true.,We ensure that setup and teardown methods are always executed, providing the stable environment for,all tests and preventing null pointer exception here because they weren't executed.
     @Parameters("browser")
-    public void setUp (@Optional("chrome") String browser)
+    public void setUp (@Optional("firefox") String browser)
     {
         logger= Logger.getLogger(AddressOrder.class.getName());
         logger.setLevel(Level.INFO);// we will get a clear view of the test flow and important events that occur during the test execution.
